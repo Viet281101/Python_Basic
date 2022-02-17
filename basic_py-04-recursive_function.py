@@ -1,5 +1,5 @@
 
-##################### Exercises to calculate recursive functions on python ########################
+##################### Exercises to calculate recursive functions in python ########################
 
 
 
