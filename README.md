@@ -14,12 +14,12 @@
 ```
 ~$ sudo apt-get remove python3-tk
 ```
->(to remove the package itself)
->or:
+(to remove the package itself)
+>>or:
 
 ```
 ~$ sudo apt-get remove --auto-remove python3-tk
 ```
->(to remove the package and any orther dependant packages which are no loner needed)
+(to remove the package and any orther dependant packages which are no loner needed)
 
 
