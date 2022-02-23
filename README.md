@@ -2,7 +2,7 @@
 Pratice and learining basics python
 
 
-- In the folder game python, I've need to install 'tkinter':
+- In the **_folder game python_**, I've need to install 'tkinter':
 
 ```
 ~$ sudo apt-get update
