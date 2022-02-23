@@ -1,6 +1,6 @@
 # Python_Basics_Exercices
-## Pratice and learining basics python
-----
+Pratice and learining basics python
+
 
 - In the folder game python, I've need to install 'tkinter':
 
@@ -15,7 +15,9 @@
 ~$ sudo apt-get remove python3-tk
 ```
 (to remove the package itself)
->>or:
+*Enter*
+or:
+*Enter*
 
 ```
 ~$ sudo apt-get remove --auto-remove python3-tk
