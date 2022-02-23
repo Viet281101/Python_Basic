@@ -15,9 +15,9 @@ Pratice and learining basics python
 ~$ sudo apt-get remove python3-tk
 ```
 (to remove the package itself)
-*Enter*
+
 or:
-*Enter*
+
 
 ```
 ~$ sudo apt-get remove --auto-remove python3-tk
