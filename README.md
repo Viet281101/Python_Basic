@@ -1,4 +1,4 @@
-# Python_Basics_Exercices
+# Python Basics Exercices
 Pratice and learining basics python
 
 
