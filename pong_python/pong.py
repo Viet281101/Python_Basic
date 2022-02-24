@@ -1,5 +1,7 @@
 
 import turtle
+import os
+
 
 # This is the speed corresponding to mine :)
 ball_speed = 0.1
@@ -107,14 +109,25 @@ while True:
 	ball.setx(ball.xcor() + ball.dx)
 	ball.sety(ball.ycor() + ball.dy)
 
+
 	# Border checking
 	if ball.ycor() > 290:
 		ball.sety(290)
 		ball.dy *= -1
 
+		#### play sound
+
+		## on Linux:
+		os.system("aplay bounce.wav&")
+
+		## on Macs:
+		# os.system("afplay bounce.wav&")
+
 	if ball.ycor() < -290:
 		ball.sety(-290)
 		ball.dy *= -1
+
+		os.system("aplay bounce.wav&")
 
 	if ball.xcor() > 390:
 		ball.goto(0, 0)
@@ -130,13 +143,16 @@ while True:
 		pen.clear()
 		pen.write("Player A: {0} Player B: {1}".format(score_a, score_b), align = "center", font = ("Courier", 24, "normal"))
 
+
 	# Paddle and ball collisions
 	if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
 		ball.setx(340)
 		ball.dx *= -1
+		os.system("aplay bounce.wav&")
 
 
 	if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
 		ball.setx(-340)
 		ball.dx *= -1
+		os.system("aplay bounce.wav&")
 
