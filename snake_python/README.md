@@ -2,7 +2,7 @@
 
 ## Snake Game in Python
 
-Install *_'tkinter'_*:
+Install *_'tkinter'_* to run the code:
 
 ```
 ~$ sudo apt-get update
