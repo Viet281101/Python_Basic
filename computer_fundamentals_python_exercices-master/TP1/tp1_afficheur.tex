@@ -1,0 +1,92 @@
+% Format   : LaTeX file
+% A propos : TD L2-1 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage{moreverb}
+\usepackage{comment}
+\usepackage{multicol}
+
+\newcommand{\Mmae}[1]{{\ttfamily #1}}
+
+
+\newcounter{cptexercice}
+\setcounter{cptexercice}{1}
+\newcommand{\exercice}[1]{\vspace{3mm} \noindent {\bf Exercice \thecptexercice.} \addtocounter{cptexercice}{1} {\emph{#1}} \par}
+\pagestyle{empty}
+
+\addtolength{\textwidth}{6cm}
+\addtolength{\textheight}{7cm}
+\addtolength{\voffset}{-3cm}
+\addtolength{\hoffset}{-3.2cm}
+
+\begin{document}
+
+\begin{center}
+{\LARGE
+{\bf Informatique Fondamentale} \\ {\small L1 2021-2022} \\ Travaux Pratiques 1  - Afficheur sept segments}
+\end{center}
+\noindent\rule{\linewidth}{0.5pt}
+%\Mmae{gcc mon\_fichier.c -std=c11 -Wall -Wextra -o mon\_programme }\par\noindent
+%Les exercices marqués d'une étoile sont optionnels et à faire dans un second temps.\par
+%\noindent\rule{\linewidth}{0.5pt}
+
+
+On veut concevoir  un afficheur à sept segments.
+
+\begin{enumerate}
+   \item Dans un dossier vierge (appelons-le \Mmae{tp1/}) télécharger les fichiers \Mmae{afficheur.py} et \Mmae{expression}.
+   \item Avec un terminal assez grand pour couvrir tout l'écran et après s'être placé dans le dossier \Mmae{tp1/},  lancer la commande suivante \Mmae{\$ python afficheur.py}. Si tout se passe bien vous devriez obtenir une sortie semblable à  :
+      \begin{verbatim}
+cd tp1/
+....@......$python afficheur.py
+                                                                                    
+  0        1        2        3        4        5        6        7        8        9        
+                                                                                        
+ ----     ----     ----     ----     ----     ----     ----     ----     ----     ----         
+     |   |    |        |   |        |    |   |    |        |   |             |   |             
+     |   |    |        |   |        |    |   |    |        |   |             |   |             
+ ----     ----     ----     ----     ----     ----     ----     ----     ----     ----         
+         |             |   |                 |                 |                 |    |        
+         |             |   |                 |                 |                 |    |        
+          ----              ----     ----     ----              ----              ----         
+                                                                     
+      \end{verbatim}
+      {\bf Explication :} exécuté, le programme python contenu dans  \Mmae{afficheur.py} utilise les expressions écrites dans le fichier \Mmae{expression}
+      pour simuler un afficheur à sept segments. 
+      L'afficheur utilise, pour chaque segment, une expression booléenne qui dépend de l'écriture binaire du nombre.
+      Exemple : l'expression \Mmae{sgh = b0 et b2} signifie que le segment vertical en haut à
+      gauche (SGH : segment haut gauche) ne s'allume que si les bits zero et deux du nombre sont à 1. 
+      \par
+
+      Pour chaque nombre de 0 à 9, le programme calcul les segments qui 
+      doivent être allumés à partir de l'écriture binaire du nombre
+      en utilisant les expressions et affiche le resultat. 
+      \par
+      Pour un nombre écrit en binaire, l'ordre des bits est celui ci : $b_4b_2b_1b_0$.
+
+   \item Modifier le contenu du fichier \Mmae{expression} afin d'obtenir un 
+      afficheur correcte, ressemblant à ça :
+      \begin{verbatim}
+                                                                                             
+  0        1        2        3        4        5        6        7        8        9         
+                                                                                             
+ ----              ----     ----              ----     ----     ----     ----     ----       
+|    |        |        |        |   |    |   |        |             |   |    |   |    |      
+|    |        |        |        |   |    |   |        |             |   |    |   |    |      
+                   ----     ----     ----     ----     ----              ----     ----       
+|    |        |   |             |        |        |   |    |        |   |    |        |      
+|    |        |   |             |        |        |   |    |        |   |    |        |      
+ ----              ----     ----              ----     ----              ----     ----       
+                                                                     
+      \end{verbatim}
+
+\end{enumerate}
+
+
+\end{document}

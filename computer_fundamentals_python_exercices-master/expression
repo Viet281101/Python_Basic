@@ -1,0 +1,47 @@
+#line_top
+sh=(non b3 and non b2 and non b1 and non b0) + (non b3 and non b2 and b1 and non b0) + (non b3 and non b2 and b1 and b0) + (non b3 and b2 and non b1 and b0) + (non b3 and b2 and b1 and non b0) + (non b3 and b2 and b1 and b0) 	+ (b3 and non b2 and non b1 and non b0) + (b3 and non b2 and non b1 and b0)
+
+#line_bottom
+sb=(non b3 and non b2 and non b1 and non b0) + (non b3 and non b2 and b1 and non b0) + (non b3 and non b2 and b1 and b0) + (non b3 and b2 and non b1 and b0) + (non b3 and b2 and b1 and non b0) + (b3 and non b2 and non b1 and non b0) + (b3 and non b2 and non b1 and b0)
+
+#line_center
+sm=(non b3 and non b2 and b1 and non b0) + (non b3 and non b2 and b1 and b0) + (non b3 and b2 and non b1 and non b0) + (non b3 and b2 and non b1 and b0) + (non b3 and b2 and b1 and non b0) + (b3 and non b2 and non b1 and non b0) + (b3 and non b2 and non b1 and b0)
+
+#left_top
+shg=(non b3 and non b2 and non b1 and non b0) + (non b3 and b2 and non b1 and non b0) + (non b3 and b2 and non b1 and b0) + (non b3 and b2 and b1 and non b0) + (b3 and non b2 and non b1 and non b0) + (b3 and non b2 and non b1 and b0)
+
+#left_bttom
+sbg=(non b3 and non b2 and non b1 and non b0) + (non b3 and non b2 and b1 and non b0) + (non b3 and b2 and b1 and non b0) + (b3 and non b2 and non b1 and non b0)
+
+#right_top
+sdh=(non b3 and non b2 and non b1 and non b0) + (non b3 and non b2 and non b1 and b0) + (non b3 and non b2 and b1 and non b0) + (non b3 and non b2 and b1 and b0) + (non b3 and b2 and non b1 and non b0) + (non b3 and b2 and b1 and b0) + (b3 and non b2 and non b1 and non b0) + (b3 and non b2 and non b1 and b0)
+ 
+#right_bottom
+sdb=(non b3 and non b2 and non b1 and non b0) + (non b3 and non b2 and non b1 and b0) + (non b3 and non b2 and b1 and b0) + (non b3 and b2 and non b1 and non b0) + (non b3 and b2 and non b1 and b0) + (non b3 and b2 and b1 and non b0) + (non b3 and b2 and b1 and b0) + (b3 and non b2 and non b1 and non b0) + (b3 and non b2 and non b1 and b0)
+
+
+
+#0 = (non b3 and non b2 and non b1 and non b0)
+#1 = (non b3 and non b2 and non b1 and b0)
+#2 = (non b3 and non b2 and b1 and non b0)
+#3 = (non b3 and non b2 and b1 and b0)
+#4 = (non b3 and b2 and non b1 and non b0)
+#5 = (non b3 and b2 and non b1 and b0)
+#6 = (non b3 and b2 and b1 and non b0)
+#7 = (non b3 and b2 and b1 and b0)
+#8 = (b3 and non b2 and non b1 and non b0)
+#9 = (b3 and non b2 and non b1 and b0)
+
+
+####### commentaires ######## 
+# une expression peut utiliser : . and * + ou ( ) True T t false AND oR  .... et les bits b0 b1 b2 b3 
+# le mot est écrit dans cet ordre :  b3 b2 b1 b0. Exemple le nombre 5=0101 donne b3=0 b2=1 b1=0 b0=1
+# . et and AnD eT *  (rien)
+# ou Or Ou +
+# NoT nOt non 
+# bit : b0 b1 b2 b3
+# True T V vrAi 1
+# False faLse F faUx 0
+# sh : segment du haut sm: segment horizontale du milieu; sb : segment du bas
+# sgb : segment vertical de gauche en bas ...
+# une absence de symbole entre deux expressions signifie implicitement le et logique

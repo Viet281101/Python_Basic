@@ -1,0 +1,20 @@
+sh=True
+sb=b0+b1 b2 1
+sm=b1 not b0 not 0 + b2
+shg=b2.b3+b0
+sbg=b1 and non (b3+b0)
+sdh=b0+ b1 ou b0 oR (1 and b3)
+sdb=b1+b3
+
+####### commentaires ######## 
+# une expression peut utiliser : . and * + ou ( ) True T t false AND oR  .... et les bits b0 b1 b2 b3 
+# le mot est écrit dans cet ordre :  b3 b2 b1 b0. Exemple le nombre 5=0101 donne b3=0 b2=1 b1=0 b0=1
+# . et and AnD eT *  (rien)
+# ou Or Ou +
+# NoT nOt non 
+# bit : b0 b1 b2 b3
+# True T V vrAi 1
+# False faLse F faUx 0
+# sh : segment du haut sm: segment horizontale du milieu; sb : segment du bas
+# sgb : segment vertical de gauche en bas ...
+# une absence de symbole entre deux expressions signifie implicitement le et logique
