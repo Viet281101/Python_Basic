@@ -34,7 +34,8 @@ def exercice_2(a):
 
 
 #### Exercices 3: Perfect number: find all perfect numbers in the range 1-1000
-def exercice_3():
+def exercice_3_first_step():
+	# find the number perfect 
 	number = int(input("Enter a number: "))
 	s = 0
 	for i in range(1, number, 1):
@@ -47,10 +48,21 @@ def exercice_3():
 
 
 
+def exercice_3():
+	for number in range(1, 1001, 1):
+		s = 0
+		for i in range(1, number, 1):
+			if number % i == 0:
+				s = s + i
+		if s == number:
+			print(s, end = "  ")
+
+
 
 def main():
 
 	# Ex1:
+	print("The number divisible by 3 from 10 to 50: ")
 	exercice_1_first_solution()
 
 	print()
@@ -73,10 +85,15 @@ def main():
 
 
 	# Ex3:
-	exercice_3()
+	exercice_3_first_step()
 
 	print()
 	print("___" * 20)
+	print()
+
+
+	print("All perfect numbers in the range 1-1000 are: ")
+	exercice_3()
 	print()
 
 
