@@ -19,11 +19,30 @@ def string_element():
 	print(lst)
 
 
-def merge_list():
+## Join Two Lists
+def join_lists():
 	lst = [0, 1, 2, 3, 4]
 	lst_2 = ["python", "excel"]
 	lst_3 = [lst, lst_2]
 	print(lst_3)
+
+
+## Append list2 into list1:
+def join_to_list1():
+	list1 = ["a", "b" , "c"]
+	list2 = [1, 2, 3]
+	for x in list2:
+		list1.append(x)
+	print(list1) 
+
+
+## Use the extend() method to add list2 at the end of list1:
+def join_with_extend():
+	list1 = ["a", "b" , "c"]
+	list2 = [1, 2, 3]
+
+	list1.extend(list2)
+	print(list1) 
 
 
 def length_list():
@@ -191,13 +210,137 @@ def clear_list():
 
 
 
+#### Loop Lists
+
+## We can loop through the list items by using a for loop:
+def print_list_by_loop():
+	thislist = ["apple", "banana", "cherry"]
+	for x in thislist:
+		print(x)
+
+
+## We can also loop through the list items by referring to their index number. Use the range() and len() functions to create a suitable iterable.
+def print_list_by_loop_index():
+	thislist = ["apple", "banana", "cherry"]
+	for i in range(len(thislist)):
+		print(thislist[i])
+
+
+## Print all items, using a while loop to go through all the index numbers
+def print_item_while_loop():
+	thislist = ["apple", "banana", "cherry"]
+	i = 0
+	while i < len(thislist):
+		print(thislist[i])
+		i = i + 1
+
+
+## A short hand for loop that will print all items in a list:
+def print_item_short_for():
+	thislist = ["apple", "banana", "cherry"]
+	[print(x) for x in thislist]
+
+
+
+
+
+
+#### List Comprehension
+
+### The syntax: newlist = [expression for item in iterable if condition == True]
+
+def list_comprehension():
+	fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+	newlist = []
+	for x in fruits:
+		if "a" in x:
+			newlist.append(x)
+	print(newlist) 
+
+
+## With list comprehension in one line of code:
+def list_comprehension_short():
+	fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+	# only print the element with character 'a' inside it
+	newlist = [x for x in fruits if "a" in x]
+	print(newlist)
+
+
+
+
+
+
+#### Sort Lists
+
+## List objects have a sort() method that will sort the list alphanumerically, ascending, by default:
+def sort_list_alphanumerically():
+	# Sort the list alphabetically:
+	thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+	thislist.sort()
+	print(thislist)
+
+	# Sort the list numerically:
+	thislist = [100, 50, 65, 82, 23]
+	thislist.sort()
+	print(thislist)
+
+
+## To sort descending, use the keyword argument reverse = True:
+def sort_descending():
+	# Sort the list descending:
+	thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+	thislist.sort(reverse = True)
+	print(thislist)
+
+	# Sort the ist descending:
+	thislist = [100, 50, 65, 82, 23]
+	thislist.sort(reverse = True)
+	print(thislist)
+
+
+
+
+
+#### Reverse Order
+
+## The reverse() method reverses the current sorting order of the elements.
+def reverse_order():
+	thislist = ["banana", "Orange", "Kiwi", "cherry"]
+	thislist.reverse()
+	print(thislist)
+
+
+
+
+
+#### Copy Lists
+
+## There are ways to make a copy, one way is to use the built-in List method copy().
+
+# Make a copy of a list with the copy() method:
+def copy_list_copy():
+	thislist = ["apple", "banana", "cherry"]
+	mylist = thislist.copy()
+	print(mylist)
+
+
+# Make a copy of a list with the list() method:
+def copy_list_list():
+	thislist = ["apple", "banana", "cherry"]
+	mylist = list(thislist)
+	print(mylist)
+
+
+
+
+
 def main():
 
 	# type_list()
 
 	# string_element()
 
-	# merge_list()
+	# join_lists()
 
 	length_list()
 
