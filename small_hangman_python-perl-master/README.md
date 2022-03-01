@@ -1,6 +1,6 @@
 ## Python Basics Hanging Man Game
 
-One in Perl and one in Python
+With one in Perl and one in Python
 
 
 
