@@ -1,6 +1,7 @@
 # Python Basics Exercices
-Pratice and learining basics python
+Pratice and learining basics [python](https://www.python.org/)
 
+[![alt text](logo_programme_language_python.png)](https://www.python.org/)
 
 - In the **_folders game python_**, I've need to install *_'tkinter'_*:
 
