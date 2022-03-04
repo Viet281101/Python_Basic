@@ -4,7 +4,7 @@ Pratice and learining basics [python](https://www.python.org/)
 [![alt text](logo_programme_language_python.png)](https://www.python.org/)
 
 ---------------------------------------------------------------
-1) Download:
+1) [**<ins>Download</ins>**](https://www.python.org/downloads/):
 
 ### The base command to <ins>install</ins> [python](https://www.python.org/):
 _(just in Ubuntu Linux for me)_
@@ -77,7 +77,7 @@ python3 --version
 
 
 ---------------------------------------------------------------------------------------
-2) Tools and pip:
+2) **<ins>Tools and pip</ins>**:
 
 ### To see if <ins>**pip**</ins> is installed, open a command prompt and run:
 ```
