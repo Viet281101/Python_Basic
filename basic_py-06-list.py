@@ -336,6 +336,8 @@ def copy_list_list():
 
 def main():
 
+	###### Test any function up there to see how it works :
+
 	# type_list()
 
 	# string_element()
