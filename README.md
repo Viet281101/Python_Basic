@@ -6,7 +6,7 @@ Pratice and learining basics [python](https://www.python.org/)
 ---------------------------------------------------------------
 1) Download:
 
-## The base command to <ins>install</ins> [python](https://www.python.org/):
+### The base command to <ins>install</ins> [python](https://www.python.org/):
 _(just in Ubuntu Linux for me)_
 
 - Check the version of [Python](https://www.python.org/) in the computer:
