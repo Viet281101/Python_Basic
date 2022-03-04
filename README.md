@@ -3,26 +3,81 @@ Pratice and learining basics [python](https://www.python.org/)
 
 [![alt text](logo_programme_language_python.png)](https://www.python.org/)
 
-- In the **_folders game python_**, I've need to <ins>install</ins> *_'tkinter'_*:
+### The base command to <ins>install</ins> [python](https://www.python.org/):
+_(just in Ubuntu Linux for me)_
 
+- Check the version of [Python](https://www.python.org/) in the computer:
 ```
-~$ sudo apt-get update
-~$ sudo apt-get install python3-tk
+python --version
 ```
 
-- And to <ins>uninstall</ins> it: 
-
+- Update and Refresh Repository Lists:
 ```
-~$ sudo apt-get remove python3-tk
+sudo apt update
 ```
-_(to remove the package itself)_
 
-or:
-
-
+- Install Supporting Software:
 ```
-~$ sudo apt-get remove --auto-remove python3-tk
+sudo apt install software-properties-common
 ```
-_(to remove the package and any orther dependant packages which are no loner needed)_
 
+
+##### Option 1: Install Python 3 Using apt (Easier)
+- Add Deadsnakes PPA:
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+```
+- Install Python 3:
+```
+sudo apt install python3.10
+python --version
+```
+
+
+##### Option 2: Install Python 3.7 From Source Code (Latest Version)
+- Update Local Repositories:
+```
+sudo apt update
+```
+- Install Supporting Software:
+```
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+```
+- Download the Latest Version of Python Source Code:
+```
+cd /tmp
+wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz
+```
+- Extract Compressed Files:
+```
+tar -xf Python-3.8.3.tgz
+```
+- Test System and Optimize Python:
+```
+cd python-3.10
+./configure --enable-optimizations
+```
+- Install a Second Instance of Python (recommended):
+```
+sudo make altinstall
+```
+- Overwrite Default Python Installation:
+(if you want)
+```
+sudo make install
+```
+- Verify Python Version:
+```
+python3 --version
+```
+
+
+---------------------------------------------------------------------------------------
+
+
+### To see if <ins>**pip**</ins> is installed, open a command prompt and run:
+```
+command -v pip3
+```
 
