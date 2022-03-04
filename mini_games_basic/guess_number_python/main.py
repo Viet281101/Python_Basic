@@ -24,8 +24,12 @@ def guess_nbr_computer(x):
 	feedback = ''
 
 	while feedback != 'c' and low != high:
-		guess = random.randint(low, high)
-		feedback = input(f'Is {guess} too high (H), too low (L), or correct (C) ??').lower()
+		if low != high:
+			guess = random.randint(low, high)
+		else:
+			# could also be high b/c low = high
+			guess = low
+		feedback = input(f'Is {guess} too high (H), too low (L), or correct (C) ? ').lower()
 		if feedback == 'h':
 			high = guess - 1
 		elif feedback == 'l':
@@ -35,7 +39,10 @@ def guess_nbr_computer(x):
 
 
 def main():
-	guess_nbr_user(10)
+
+	# guess_nbr_user(10)
+
+	guess_nbr_computer(10)
 
 
 

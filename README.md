@@ -3,7 +3,10 @@ Pratice and learining basics [python](https://www.python.org/)
 
 [![alt text](logo_programme_language_python.png)](https://www.python.org/)
 
-### The base command to <ins>install</ins> [python](https://www.python.org/):
+---------------------------------------------------------------
+1) Download:
+
+## The base command to <ins>install</ins> [python](https://www.python.org/):
 _(just in Ubuntu Linux for me)_
 
 - Check the version of [Python](https://www.python.org/) in the computer:
@@ -22,7 +25,7 @@ sudo apt install software-properties-common
 ```
 
 
-##### Option 1: Install Python 3 Using apt (Easier)
+### <ins>Option 1:</ins> Install Python 3 Using apt (Easier)
 - Add Deadsnakes PPA:
 ```
 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -35,7 +38,7 @@ python --version
 ```
 
 
-##### Option 2: Install Python 3.7 From Source Code (Latest Version)
+### <ins>Option 2:</ins> Install Python 3.7 From Source Code (Latest Version)
 - Update Local Repositories:
 ```
 sudo apt update
@@ -74,7 +77,7 @@ python3 --version
 
 
 ---------------------------------------------------------------------------------------
-
+2) Tools and pip:
 
 ### To see if <ins>**pip**</ins> is installed, open a command prompt and run:
 ```
