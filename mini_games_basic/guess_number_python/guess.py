@@ -23,6 +23,8 @@ def guess_nbr_computer(x):
 	high = x
 	feedback = ''
 
+	print("Think a number inside your head and make the computer guess :))")
+
 	while feedback != 'c' and low != high:
 		if low != high:
 			guess = random.randint(low, high)

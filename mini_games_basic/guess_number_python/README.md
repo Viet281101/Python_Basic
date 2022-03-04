@@ -5,6 +5,11 @@
 -----------------------
 
 - User guess
-_(only to pratice ```randint``` into my program)_
+
+
+_only to pratice ```randint``` into my program_
 
 - Computer guess
+
+
+_Just think a number inside your head and make the computer guess :))_
