@@ -3,7 +3,7 @@
 
 ---------------------------------------------------------------
 
-- You may need to <ins>install</ins> ```tkinter``` to see:
+- To <ins>install</ins> ```tkinter``` :
 
 ```
 ~$ sudo apt-get update

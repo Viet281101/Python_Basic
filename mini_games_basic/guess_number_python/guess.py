@@ -10,11 +10,11 @@ def guess_nbr_user(x):
 	while guess != random_nbr:
 		guess = int(input(f'Guess a number between 1 and {x}: '))
 		if guess < random_nbr:
-			print('Sorry, guess again. Too low.')
+			print('\nSorry, guess again. Too low.\n')
 		elif guess > random_nbr:
-			print('Sorry, guess again. Too high.')
+			print('\nSorry, guess again. Too high.\n')
 
-	print(f'Congratulation ! The number {random_nbr} is the correct number !')
+	print(f'\nCongratulation ! The number {random_nbr} is the correct number !\n')
 
 
 
@@ -23,7 +23,7 @@ def guess_nbr_computer(x):
 	high = x
 	feedback = ''
 
-	print("Think a number inside your head and make the computer guess :))")
+	print("Think a number inside your head and make the computer guess :))\n")
 
 	while feedback != 'c' and low != high:
 		if low != high:
@@ -31,13 +31,13 @@ def guess_nbr_computer(x):
 		else:
 			# could also be high b/c low = high
 			guess = low
-		feedback = input(f'Is {guess} too high (H), too low (L), or correct (C) ? ').lower()
+		feedback = input(f'\nIs {guess} too high (H), too low (L), or correct (C) ? ').lower()
 		if feedback == 'h':
 			high = guess - 1
 		elif feedback == 'l':
 			low = guess + 1
 
-	print(f'The computer guessed your number, that is {guess} !!')
+	print(f'\nThe computer guessed your number, that is {guess} !!\n')
 
 
 def main():
