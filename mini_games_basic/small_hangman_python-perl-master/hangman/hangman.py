@@ -12,11 +12,11 @@ def get_valid_word(words):
 	while '-' in word or ' ' in word:
 		word = random.choice(words)
 
-	return word.upper()
+	return word
 
 
 def hangman():
-	word = get_valid_word(words)
+	word = get_valid_word(words).upper()
 	word_letters = set(word) # letters in the word
 	alphabet = set(string.ascii_uppercase)
 	used_letters = set() # what the user has guessed
