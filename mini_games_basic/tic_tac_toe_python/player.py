@@ -38,6 +38,21 @@ class HumanPlayer(Player):
 
 		while not valid_square:
 			square = input(self.letter + '\'s turn. Input move (0-9: ')
-			
+
+			## check that this is a correct value by trying to cast
+			## it to an integer, and if it's not , then say its invalid
+			## if that spot is not available on the board, also say invalid
+
+			try:
+				val = int(square)
+				if val not in game.available_moves():
+					raise ValueError 
+
+				## valid if these are succesful:
+				valid_square = True
+			except ValueError:
+				print('Invalid square. Try again.')
+
+		return val
 
 

@@ -34,7 +34,10 @@ class TicTacToe:
 
 
 		## Option 2:
-		
+
 		return [i for i, spot in enumerate(self.board) if spot == ' ']
 
+
+	def play(game, x_player, o_player, print_game = True):
+		pass
 
