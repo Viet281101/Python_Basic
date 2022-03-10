@@ -1,4 +1,4 @@
-# Python Basics Exercices
+# [Python](https://www.python.org/) Basics Exercices
 Pratice and learining basics [python](https://www.python.org/)
 
 [![alt text](logo_programme_language_python.png)](https://www.python.org/)
